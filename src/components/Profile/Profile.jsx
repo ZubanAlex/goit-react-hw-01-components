@@ -4,13 +4,11 @@ import style from "./Profile.module.css";
 import T from "prop-types";
 
 const Profile = ({
-  user: {
-    name,
-    tag,
-    location,
-    avatar,
-    stats: { followers, views, likes }
-  }
+  name,
+  tag,
+  location,
+  avatar,
+  stats: { followers, views, likes }
 }) => {
   return (
     <div className={style.profile}>
@@ -40,17 +38,15 @@ const Profile = ({
 };
 
 Profile.protoType = {
-  user: T.shape({
-    name: T.string.isRequired,
-    tag: T.string.isRequired,
-    location: T.string.isRequired,
-    avatar: T.string.isRequired,
-    stats: T.shape({
-      followers: T.number.isRequired,
-      views: T.number.isRequired,
-      ikes: T.number.isRequired
-    })
-  })
+  name: T.string.isRequired,
+  tag: T.string.isRequired,
+  location: T.string.isRequired,
+  avatar: T.string.isRequired,
+  stats: T.shape({
+    followers: T.number.isRequired,
+    views: T.number.isRequired,
+    ikes: T.number.isRequired
+  }).isRequired
 };
 
 export default Profile;
