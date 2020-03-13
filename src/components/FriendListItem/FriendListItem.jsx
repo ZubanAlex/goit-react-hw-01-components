@@ -14,7 +14,7 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
   );
 };
 
-FriendListItem.prototype = {
+FriendListItem.protoType = {
   avatar: T.string.isRequired,
   name: T.string.isRequired,
   isOnline: T.bool.isRequired,
