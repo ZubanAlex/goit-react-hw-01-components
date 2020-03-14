@@ -29,7 +29,7 @@ const TransactionHistory = ({ transactions }) => {
   );
 };
 
-TransactionHistory.protoType = {
+TransactionHistory.propType = {
   transactions: T.shape(
     T.arrayOf({
       id: T.string.isRequired,

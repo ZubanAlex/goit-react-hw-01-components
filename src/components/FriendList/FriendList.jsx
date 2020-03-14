@@ -22,7 +22,7 @@ const FriendList = ({ friends }) => {
   );
 };
 
-FriendList.protoType = {
+FriendList.propType = {
   friends: T.array.isRequired
 };
 

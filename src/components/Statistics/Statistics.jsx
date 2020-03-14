@@ -33,7 +33,7 @@ const Statistics = ({ title, stats }) => {
   );
 };
 
-Statistics.protoType = {
+Statistics.propType = {
   title: T.string.isRequired,
   stats: T.arrayOf(
     T.shape({

@@ -37,7 +37,7 @@ const Profile = ({
   );
 };
 
-Profile.protoType = {
+Profile.propType = {
   name: T.string.isRequired,
   tag: T.string.isRequired,
   location: T.string.isRequired,
